@@ -18,4 +18,8 @@ public abstract class Player {
         return healthPoints;
     }
 
+    public void increaseHealth (int healer) {
+        this.healthPoints += healer;
+    }
+
 }

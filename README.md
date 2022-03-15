@@ -2,14 +2,14 @@
 
 Java modelled fantasy adventure game. TDD lab, implemented 4 pillars and solid principles.
 
+![](app-screenshots/1.png)
+
 The game has players, who have a number of health points and weapons/spells. Players fall into different categories:
 
-#
 ### Dwarves, Barbarians, Knights 
 * Each of these have a weapon (Sword, Axe, Club) and can fight with other players. 
 * Each are able to change their weapon at any point in the game.
 
-#
 ### Warlocks and Wizards 
 * They are able to cast spells (Fireball, Lightning Strike) on others.
 * They can have a mythical creature (Ogre or Dragon) who will defend them from attackers.
@@ -17,7 +17,7 @@ The game has players, who have a number of health points and weapons/spells. Pla
 
 
 -----------------------------------------
-#
+
 ### Clerics 
 * They have healing tools (potion, herbs) with which they can heal other players.
 * They are able to change healing tool at any point in the game.
