@@ -1,3 +1,4 @@
+import heals.Herbs;
 import heals.IHeal;
 import heals.Potion;
 import org.junit.Before;
@@ -18,6 +19,7 @@ public class ClericTest {
 
     @Before
     public void before() {
+        herbs = new Herbs();
         potion = new Potion();
         sword = new Sword();
         knight = new Knight("Giffard", 10, sword);
