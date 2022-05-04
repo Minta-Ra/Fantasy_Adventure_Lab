@@ -12,13 +12,13 @@ public class AxeTest {
     @Before
     public void before(){
         axe = new Axe();
-        orc = new Orc(10);
+        orc = new Orc(20);
     }
 
     @Test
     public void canDoDamage(){
         axe.attack(orc);
-        assertEquals(5, orc.getHealthPoints());
+        assertEquals(15, orc.getHealthPoints());
     }
 
 }

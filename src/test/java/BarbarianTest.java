@@ -20,7 +20,7 @@ public class BarbarianTest {
         weapon1 = new Axe();
         weapon2 = new Club();
         barbarian = new Barbarian("Fredrick", 10, weapon1);
-        enemy = new Orc(10);
+        enemy = new Orc(20);
     }
 
     @Test
@@ -36,7 +36,7 @@ public class BarbarianTest {
     @Test
     public void canDamage(){
         barbarian.attack(enemy);
-        assertEquals(5, enemy.getHealthPoints());
+        assertEquals(15, enemy.getHealthPoints());
     }
 
     @Test
@@ -44,7 +44,7 @@ public class BarbarianTest {
         barbarian.changeWeapon(weapon2);
         barbarian.attack(enemy);
         assertEquals(weapon2, barbarian.getWeapon());
-        assertEquals(8, enemy.getHealthPoints());
+        assertEquals(18, enemy.getHealthPoints());
     }
 
 }

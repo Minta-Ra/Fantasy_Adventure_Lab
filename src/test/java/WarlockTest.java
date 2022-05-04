@@ -22,7 +22,7 @@ public class WarlockTest {
         defend = null;
         defend1 = new Dragon();
         spell = new LighteningStrike();
-        enemy = new Orc(10);
+        enemy = new Orc(20);
         warlock = new Warlock("Merlin", 10, spell, defend);
     }
 
@@ -39,7 +39,7 @@ public class WarlockTest {
     @Test
     public void canCast(){
         warlock.cast(enemy);
-        assertEquals(6, enemy.getHealthPoints());
+        assertEquals(16, enemy.getHealthPoints());
     }
 
     @Test
@@ -48,7 +48,7 @@ public class WarlockTest {
         warlock.setDefend(defend1);
         warlock.defendMageHitEnemy(enemy);
         assertEquals(defend1, warlock.getDefend());
-        assertEquals(5, enemy.getHealthPoints());
+        assertEquals(15, enemy.getHealthPoints());
     }
 
 }

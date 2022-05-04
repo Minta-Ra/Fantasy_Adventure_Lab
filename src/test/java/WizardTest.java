@@ -23,7 +23,7 @@ public class WizardTest {
         defend = null;
         defend1 = new Ogre();
         spell = new Fireball();
-        enemy = new Orc(10);
+        enemy = new Orc(20);
         wizard = new Wizard("Harry", 10, spell, defend);
     }
 
@@ -40,7 +40,7 @@ public class WizardTest {
     @Test
     public void canCast(){
         wizard.cast(enemy);
-        assertEquals(7, enemy.getHealthPoints());
+        assertEquals(17, enemy.getHealthPoints());
     }
 
     @Test
@@ -50,7 +50,7 @@ public class WizardTest {
         wizard.setDefend(defend1);
         wizard.defendMageHitEnemy(enemy);
         assertEquals(defend1, wizard.getDefend());
-        assertEquals(2, enemy.getHealthPoints());
+        assertEquals(12, enemy.getHealthPoints());
     }
 
 }

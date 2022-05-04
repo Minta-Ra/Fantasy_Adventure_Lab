@@ -33,8 +33,6 @@ The game will also have rooms to work through. Each room should either have some
 
 ## Extensions
 * Create a class for Room.
-* Create an Enum called Exit, this should have 4 values (WEST, EAST, NORTH, SOUTH)
-* Create a class for Quest. This should have an array of Rooms to work through.
 * Allow rooms to randomly assign an enemy to defeat or treasure to find once user enters the room.
 * Room should have an array of exits which should create a random number of unique exit locations when initialised.
 * When a user chooses an exit it should take them to a new Room.

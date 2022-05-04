@@ -12,13 +12,13 @@ public class ClubTest {
     @Before
     public void before(){
         club = new Club();
-        orc = new Orc(10);
+        orc = new Orc(20);
     }
 
     @Test
     public void canDoDamage(){
         club.attack(orc);
-        assertEquals(8, orc.getHealthPoints());
+        assertEquals(18, orc.getHealthPoints());
     }
 
 }
